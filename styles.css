@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+
+*{
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(5, 122, 15) 0%, rgba(146,223,43,1) 14%, rgba(88,219,165,1) 100%);
+}
+
+.counterContainer{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    font-size: 32px;
+    width: 45px;
+    text-align: right;
+}
+
+#tennisCounter{
+    margin-bottom: 20px;
+}
+
+#perClick{
+    width: 150px;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+#clicker{
+    cursor: pointer;
+    font-size: 70px;
+}
+
+#upgrades{
+    width: 30vw;
+    height: 500px;  
+    position: fixed;
+    top: 30px;
+    right: 50px;
+}
+
+#upgrades div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    height: 100px;
+    border: 1px solid black;
+    padding:1rem;
+    color: white;
+}
+
+#Serena.dark, #Naomi.dark, #Djokovic.dark, #Rafael.dark, #Federer.dark {
+    background-color: rgba(37, 37, 37, 0.5);
+    color: black;
+}
+
+#container{
+    position: fixed;
+    bottom: 10px;
+}
+
+.toast{
+    padding: 2rem;
+    transform: translateY(0);
+    animation: up 3s linear forwards;
+}
+
+
+@keyframes up{
+    to{
+        transform: translateY(-100vh);
+    }
+}
